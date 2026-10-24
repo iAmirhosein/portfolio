@@ -76,6 +76,21 @@
   var skills = document.getElementById("skills");
   (config.skills || []).forEach(function (s) { skills.appendChild(el("li", null, s)); });
 
+  // ---------- marquee (two copies so the loop is seamless) ----------
+  var marquee = document.getElementById("marquee");
+  for (var copy = 0; copy < 2; copy++) {
+    (config.skills || []).forEach(function (s) { marquee.appendChild(el("span", null, s)); });
+  }
+
+  // ---------- spotlight that follows the pointer over project images ----------
+  document.getElementById("projects").addEventListener("pointermove", function (e) {
+    var media = e.target.closest && e.target.closest(".work-media");
+    if (!media) return;
+    var r = media.getBoundingClientRect();
+    media.style.setProperty("--mx", (e.clientX - r.left) + "px");
+    media.style.setProperty("--my", (e.clientY - r.top) + "px");
+  });
+
   // ---------- projects ----------
   var linkKeys = [["appStore", "work.appStore"], ["googlePlay", "work.googlePlay"], ["github", "work.github"], ["website", "work.website"]];
 
@@ -158,12 +173,22 @@
   }
 
   // ---------- theme ----------
-  document.getElementById("themeToggle").addEventListener("click", function () {
+  document.getElementById("themeToggle").addEventListener("click", function (e) {
     var current = root.getAttribute("data-theme") ||
       (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     var next = current === "dark" ? "light" : "dark";
-    root.setAttribute("data-theme", next);
-    store("theme", next);
+    function swap() { root.setAttribute("data-theme", next); store("theme", next); }
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!document.startViewTransition || reduce) { swap(); return; }
+    // circular reveal growing out of the toggle button
+    var x = e.clientX, y = e.clientY;
+    var r = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+    document.startViewTransition(swap).ready.then(function () {
+      root.animate(
+        { clipPath: ["circle(0px at " + x + "px " + y + "px)", "circle(" + r + "px at " + x + "px " + y + "px)"] },
+        { duration: 600, easing: "cubic-bezier(.2, .7, .2, 1)", pseudoElement: "::view-transition-new(root)" }
+      );
+    });
   });
 
   // ---------- language toggle ----------

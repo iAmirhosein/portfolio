@@ -58,7 +58,7 @@
   <a class="skip" href="#main" data-i18n="skip">رفتن به محتوا</a>
 
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="container"><div class="header-inner glass">
       <a class="brand" href="#top" dir="ltr" aria-label="iAmirhosein">
         <span class="brand-mark" aria-hidden="true">iA</span>
         <span class="brand-name">iAmirhosein</span>
@@ -80,11 +80,12 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
         </button>
       </div>
-    </div>
+    </div></div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
+      <div class="aura" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="container hero-grid">
         <div class="side-label" aria-hidden="true">
           <span data-i18n="hero.side">توسعه‌دهنده‌ی iOS</span>
@@ -97,7 +98,7 @@
             <div><dt class="stat-num" data-i18n="hero.stat1">+۸</dt><dd data-i18n="hero.stat1Label">پروژه</dd></div>
             <div><dt class="stat-num" data-i18n="hero.stat2">۲۰۱۹</dt><dd data-i18n="hero.stat2Label">شروع با iOS</dd></div>
           </dl>
-          <h1 class="hello" data-i18n="hero.hello">سلام</h1>
+          <h1 class="hello"><span class="hello-inner" data-i18n="hero.hello">سلام</span></h1>
           <p class="intro" data-i18n="hero.intro">امیرحسین کهنسال هستم، توسعه‌دهنده‌ی iOS.</p>
           <p class="lead" data-i18n="hero.lead">اپ‌های آیفون و آیپد می‌سازم؛ از شبکه‌های اجتماعی تا خانه‌ی هوشمند.</p>
           <a class="scroll-down" href="#about"><span data-i18n="hero.scroll">ادامه</span> <span aria-hidden="true">↓</span></a>
@@ -109,22 +110,26 @@
       </div>
     </section>
 
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
     <section class="section" id="about">
       <div class="container split">
         <p class="section-label"><span class="num">01</span> <span data-i18n="about.title">درباره</span></p>
-        <div class="reveal">
-          <p class="statement">
-            <span data-i18n="about.body1">از سال ۲۰۱۹ اپ iOS می‌سازم؛ از شبکه‌های اجتماعی و تماس تصویری تا اپ خانه‌ی هوشمندی که امروز روی App Store است.</span>
-            <span class="dim" data-i18n="about.body2">برایم مهم است اپ یک سال بعد از انتشار هم همان‌قدر خوب کار کند که روز اول.</span>
-          </p>
-          <dl class="facts">
-            <div><dt data-i18n="about.handle">در اینترنت</dt><dd dir="ltr">iAmirhosein</dd></div>
-            <div><dt data-i18n="about.edu">تحصیلات</dt><dd data-i18n="about.eduValue">دانشگاه گیلان</dd></div>
-            <div><dt data-i18n="about.langs">زبان‌ها</dt><dd data-i18n="about.langsValue">انگلیسی، آلمانی (مقدماتی)</dd></div>
-            <div><dt data-i18n="about.location">محل</dt><dd data-i18n="about.locationValue">رشت، ایران</dd></div>
-          </dl>
-          <h2 class="visually-hidden" data-i18n="about.skills">مهارت‌ها و ابزارها</h2>
-          <ul class="skills" id="skills" dir="ltr"></ul>
+        <div class="bento">
+          <div class="tile tile-statement reveal">
+            <p class="statement">
+              <span data-i18n="about.body1">از سال ۲۰۱۹ اپ iOS می‌سازم؛ از شبکه‌های اجتماعی و تماس تصویری تا اپ خانه‌ی هوشمندی که امروز روی App Store است.</span>
+              <span class="dim" data-i18n="about.body2">برایم مهم است اپ یک سال بعد از انتشار هم همان‌قدر خوب کار کند که روز اول.</span>
+            </p>
+          </div>
+          <div class="tile tile-fact reveal"><p class="fact-label" data-i18n="about.handle">در اینترنت</p><p class="fact-value" dir="ltr">iAmirhosein</p></div>
+          <div class="tile tile-fact reveal"><p class="fact-label" data-i18n="about.location">محل</p><p class="fact-value" data-i18n="about.locationValue">رشت، ایران</p></div>
+          <div class="tile tile-fact reveal"><p class="fact-label" data-i18n="about.edu">تحصیلات</p><p class="fact-value" data-i18n="about.eduValue">دانشگاه گیلان</p></div>
+          <div class="tile tile-fact reveal"><p class="fact-label" data-i18n="about.langs">زبان‌ها</p><p class="fact-value" data-i18n="about.langsValue">انگلیسی، آلمانی (مقدماتی)</p></div>
+          <div class="tile tile-skills reveal">
+            <h2 class="fact-label" data-i18n="about.skills">مهارت‌ها و ابزارها</h2>
+            <ul class="skills" id="skills" dir="ltr"></ul>
+          </div>
         </div>
       </div>
     </section>
