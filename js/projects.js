@@ -14,7 +14,7 @@
  *   tech         فهرست فناوری‌ها
  *   image        مسیر تصویر در assets/projects/ (اختیاری؛ اگر خالی باشد کارت با رنگ و حرف اول ساخته می‌شود)
  *                اندازه‌ی پیشنهادی: ۱۲۰۰×۷۵۰ پیکسل، PNG یا JPG یا WebP
- *   links        { appStore, googlePlay, github, website } — هر کدام خالی ("") باشد، دکمه‌اش نمایش داده نمی‌شود
+ *   links        { appStore, anardoni, googlePlay, github, website } — هر کدام خالی ("") باشد، دکمه‌اش نمایش داده نمی‌شود
  *
  * ترتیب نمایش: اول featured، بعد بر اساس سال از جدید به قدیم.
  */
@@ -87,8 +87,8 @@ window.PROJECTS = [
       en: "Type a value once and see it in every unit at once."
     },
     tech: ["Swift", "UIKit"],
-    image: "",
-    links: { appStore: "", googlePlay: "", github: "", website: "" }
+    image: "assets/projects/unit-converter.jpg",
+    links: { anardoni: "https://anardoni.com/ios/app/comiamirhoseinunitconverterunit-converter", appStore: "", googlePlay: "", github: "", website: "" }
   },
   {
     id: "rasht-radio",
@@ -119,14 +119,14 @@ window.PROJECTS = [
   {
     id: "planner",
     year: 2019,
-    title: { fa: "Planner", en: "Planner" },
+    title: { fa: "برنامه‌ریز", en: "Planner" },
     role: { fa: "فهرست کارها و یادآور", en: "To-do list & reminders" },
     description: {
       fa: "کارها، یادآورها و چک‌لیست‌ها؛ ساده و مرتب.",
       en: "Tasks, reminders and checklists. Simple and tidy."
     },
     tech: ["Swift", "Core Data", "User Notifications"],
-    image: "",
-    links: { appStore: "", googlePlay: "", github: "", website: "" }
+    image: "assets/projects/planner.jpg",
+    links: { anardoni: "https://anardoni.com/ios/app/comiamirhoseinappplanner", appStore: "", googlePlay: "", github: "", website: "" }
   }
 ];
