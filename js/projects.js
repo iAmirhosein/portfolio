@@ -20,19 +20,19 @@
  */
 window.PROJECTS = [
   {
-    id: "alpha-smart",
+    id: "alpha-shome",
     featured: true,
-    year: 2026,
-    title: { fa: "Alpha smart", en: "Alpha smart" },
+    year: 2025,
+    title: { fa: "Alpha SHome", en: "Alpha SHome" },
     role: { fa: "خانه‌ی هوشمند", en: "Smart home" },
     description: {
       fa: "همه‌ی دستگاه‌های هوشمند خانه در یک اپ، هر جا که باشید.",
       en: "Every smart device in your home, in one app, wherever you are."
     },
     tech: ["Swift", "UIKit", "Core Data", "MQTT", "WebSocket", "Alamofire", "Firebase"],
-    image: "assets/projects/alpha-smart.svg",
+    image: "assets/projects/alpha-shome.jpg",
     links: {
-      appStore: "", // ← لینک صفحه‌ی App Store را اینجا بگذارید، مثلاً "https://apps.apple.com/app/id0000000000"
+      appStore: "https://apps.apple.com/app/alpha-shome/id6544790434",
       googlePlay: "",
       github: "",
       website: ""

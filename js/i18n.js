@@ -28,7 +28,7 @@ window.I18N_EN = {
   "hero.scroll": "Scroll down",
 
   "about.title": "About",
-  "about.body1": "I've been building iOS apps since 2019, from social and video-calling apps to a smart-home app that's on the App Store today.",
+  "about.body1": "I've been building iOS apps since 2019, from social and video-calling apps to Alpha SHome, a smart-home app that's on the App Store today.",
   "about.body2": "What matters to me is an app that works as well a year after launch as it did on day one.",
   "about.handle": "Online",
   "about.edu": "Education",
