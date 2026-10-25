@@ -31,6 +31,7 @@ window.I18N_EN = {
   "about.body1": "I've been building for iOS since 2019, with one rule:",
   "about.body2": "the best app is the one you never have to think about.",
   "about.handle": "Online",
+  "about.latest": "Latest work",
   "about.skills": "Skills and tools",
 
   "work.label": "Work",
