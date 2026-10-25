@@ -14,7 +14,7 @@
  *   tech         فهرست فناوری‌ها
  *   image        مسیر تصویر در assets/projects/ (اختیاری؛ اگر خالی باشد کارت با رنگ و حرف اول ساخته می‌شود)
  *                اندازه‌ی پیشنهادی: ۱۲۰۰×۷۵۰ پیکسل، PNG یا JPG یا WebP
- *   links        { appStore, anardoni, googlePlay, github, website } — هر کدام خالی ("") باشد، دکمه‌اش نمایش داده نمی‌شود
+ *   links        { appStore, sibapp, anardoni, googlePlay, github, website } — هر کدام خالی ("") باشد، دکمه‌اش نمایش داده نمی‌شود
  *
  * ترتیب نمایش: اول featured، بعد بر اساس سال از جدید به قدیم.
  */
@@ -24,15 +24,17 @@ window.PROJECTS = [
     featured: true,
     year: 2025,
     title: { fa: "Alpha SHome", en: "Alpha SHome" },
-    role: { fa: "خانه‌ی هوشمند", en: "Smart home" },
+    role: { fa: "خانه‌ی هوشمند · از ۲۰۲۰، در App Store و استورهای ایرانی", en: "Smart home · since 2020, on the App Store and Iranian stores" },
     description: {
       fa: "همه‌ی دستگاه‌های هوشمند خانه در یک اپ، هر جا که باشید.",
       en: "Every smart device in your home, in one app, wherever you are."
     },
-    tech: ["Swift", "UIKit", "Core Data", "MQTT", "WebSocket", "Alamofire", "Firebase"],
+    tech: ["Swift", "UIKit", "Core Data", "MQTT", "WebSocket", "TCP", "RESTful API", "Firebase"],
     image: "assets/projects/alpha-shome.jpg",
     links: {
       appStore: "https://apps.apple.com/app/alpha-shome/id6544790434",
+      // نسخه‌ی استورهای ایرانی (همان Alpha Holding سابق)
+      sibapp: "https://sibapp.com/applications/Alphaholding",
       googlePlay: "",
       github: "",
       website: ""
@@ -63,19 +65,6 @@ window.PROJECTS = [
     tech: ["Swift", "RESTful API", "Firebase", "Firestore", "Cloud Messaging", "Google Maps", "Sign in with Google"],
     image: "assets/projects/amup.jpg",
     links: { appStore: "https://apps.apple.com/app/amup/id6642675054", googlePlay: "", github: "", website: "" }
-  },
-  {
-    id: "alpha-holding",
-    year: 2020,
-    title: { fa: "Alpha Holding", en: "Alpha Holding" },
-    role: { fa: "مدیریت دستگاه‌های هوشمند", en: "Smart device management" },
-    description: {
-      fa: "اپ یکپارچه برای مدیریت همه‌ی محصولات هوشمند Alpha.",
-      en: "One app for the whole family of Alpha smart devices."
-    },
-    tech: ["Swift", "RESTful API", "MQTT", "WebSocket", "TCP", "Core Data", "Firebase"],
-    image: "",
-    links: { appStore: "", googlePlay: "", github: "", website: "" }
   },
   {
     id: "unit-converter",

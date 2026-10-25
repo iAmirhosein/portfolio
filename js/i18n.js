@@ -43,6 +43,7 @@ window.I18N_EN = {
   "work.title": "Selected work",
   "work.placeholder": "Sample",
   "work.appStore": "App Store",
+  "work.sibapp": "Sibapp",
   "work.anardoni": "Anardoni",
   "work.googlePlay": "Google Play",
   "work.github": "GitHub",

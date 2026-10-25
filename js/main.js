@@ -35,6 +35,7 @@
   var faExtra = {
     "work.placeholder": "نمونه",
     "work.appStore": "App Store",
+    "work.sibapp": "سیب‌اپ",
     "work.anardoni": "اناردونی",
     "work.googlePlay": "Google Play",
     "work.github": "GitHub",
@@ -93,7 +94,7 @@
   });
 
   // ---------- projects ----------
-  var linkKeys = [["appStore", "work.appStore"], ["anardoni", "work.anardoni"], ["googlePlay", "work.googlePlay"], ["github", "work.github"], ["website", "work.website"]];
+  var linkKeys = [["appStore", "work.appStore"], ["sibapp", "work.sibapp"], ["anardoni", "work.anardoni"], ["googlePlay", "work.googlePlay"], ["github", "work.github"], ["website", "work.website"]];
 
   function renderProjects() {
     var grid = document.getElementById("projects");
