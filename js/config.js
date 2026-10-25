@@ -8,7 +8,7 @@
 window.SITE_CONFIG = {
   // عکس شما برای بخش اول سایت (سیاه‌وسفید نمایش داده می‌شود)، مثلاً "assets/me.jpg"
   // پیشنهاد: عمودی، حدود ۸۰۰×۱۰۰۰ پیکسل. تا خالی است، «iA» جایش نمایش داده می‌شود.
-  photo: "",
+  photo: "assets/me.jpg",
 
   email: "amirhosein.kv7@gmail.com",
 
