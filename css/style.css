@@ -116,11 +116,11 @@ html[dir="rtl"] .arrow-link:hover::after, html[dir="rtl"] .cta-link:hover::after
 .stat-num { font-size: clamp(1.8rem, 1.4rem + 1.4vw, 2.6rem); font-weight: var(--display-weight); line-height: 1.2; }
 .stats dd { font-size: .8rem; color: var(--muted); }
 .hello {
-  font-size: clamp(5rem, 2rem + 13vw, 12.5rem); font-weight: var(--display-weight);
-  line-height: 1; letter-spacing: 0; margin: 0;
+  font-size: clamp(2.6rem, 1.3rem + 4.6vw, 5.4rem); font-weight: var(--display-weight);
+  line-height: 1.3; letter-spacing: 0; margin: 0; max-width: 11em;
 }
-html[lang="en"] .hello { letter-spacing: -0.055em; line-height: .9; }
-.intro { font-size: clamp(1.05rem, 1rem + .35vw, 1.3rem); margin-top: 24px; }
+html[lang="en"] .hello { letter-spacing: -0.04em; line-height: 1.02; }
+.intro { font-size: clamp(1.05rem, 1rem + .35vw, 1.3rem); margin-top: 20px; color: var(--muted); }
 .intro::before { content: "— "; color: var(--muted); }
 .lead { color: var(--muted); max-width: 30em; margin-top: 6px; }
 .scroll-down { margin-top: 56px; font-size: .85rem; color: var(--muted); align-self: flex-start; }
