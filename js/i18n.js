@@ -24,7 +24,7 @@ window.I18N_EN = {
   "hero.stat2Label": "Building for iOS since",
   "hero.hello": "Amirhosein Kohansal",
   "hero.intro": "iOS Developer · Rasht, Iran",
-  "hero.lead": "I build iPhone and iPad apps, from social platforms to the smart home.",
+  "hero.lead": "Native iOS apps, crafted down to the last detail.",
   "hero.scroll": "Scroll down",
 
   "about.title": "About",
