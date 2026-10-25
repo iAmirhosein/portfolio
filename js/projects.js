@@ -54,15 +54,15 @@ window.PROJECTS = [
   {
     id: "am-up",
     year: 2021,
-    title: { fa: "Am Up", en: "Am Up" },
+    title: { fa: "AmUp", en: "AmUp" },
     role: { fa: "شبکه‌ی اجتماعی رویدادها", en: "Social events" },
     description: {
       fa: "رویدادهای اطرافتان را پیدا کنید، یا رویداد خودتان را برپا کنید.",
       en: "Find what's happening nearby, or host something of your own."
     },
     tech: ["Swift", "RESTful API", "Firebase", "Firestore", "Cloud Messaging", "Google Maps", "Sign in with Google"],
-    image: "",
-    links: { appStore: "", googlePlay: "", github: "", website: "" }
+    image: "assets/projects/amup.jpg",
+    links: { appStore: "https://apps.apple.com/app/amup/id6642675054", googlePlay: "", github: "", website: "" }
   },
   {
     id: "alpha-holding",
