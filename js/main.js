@@ -7,7 +7,7 @@
   var en = window.I18N_EN || {};
 
   function store(key, value) { try { localStorage.setItem(key, value); } catch (e) {} }
-  function lang() { return root.lang === "en" ? "en" : "fa"; }
+  function lang() { return root.lang === "fa" ? "fa" : "en"; }
   function isSet(v) { return typeof v === "string" && v.trim() !== "" && v.indexOf("REPLACE_ME") === -1; }
   function faDigits(s) { return String(s).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }); }
   function num(s) { return lang() === "fa" ? faDigits(s) : String(s); }
@@ -20,48 +20,31 @@
   }
 
   // ---------- language ----------
-  // Persian lives in the HTML; snapshot it so we can switch back without a reload.
-  var faText = new Map();
-  document.querySelectorAll("[data-i18n]").forEach(function (n) { faText.set(n, n.innerHTML); });
-  var faAttr = [];
+  // English is the default and lives in the HTML; snapshot it so Persian can switch back without a reload.
+  var fa = window.I18N_FA || {};
+  var baseText = new Map();
+  document.querySelectorAll("[data-i18n]").forEach(function (n) { baseText.set(n, n.textContent); });
+  var baseAttr = [];
   document.querySelectorAll("[data-i18n-attr]").forEach(function (n) {
     n.getAttribute("data-i18n-attr").split(";").forEach(function (pair) {
       var p = pair.split(":");
-      faAttr.push({ node: n, attr: p[0], key: p[1], value: n.getAttribute(p[0]) });
+      baseAttr.push({ node: n, attr: p[0], key: p[1], value: n.getAttribute(p[0]) });
     });
   });
 
-  // Persian strings used only from JS (no element in the page carries them).
-  var faExtra = {
-    "work.placeholder": "نمونه",
-    "work.appStore": "App Store",
-    "work.sibapp": "سیب‌اپ",
-    "work.anardoni": "اناردونی",
-    "work.googlePlay": "Google Play",
-    "work.github": "GitHub",
-    "work.website": "وب‌سایت",
-    "contact.telegram": "تلگرام",
-    "contact.whatsapp": "واتس‌اپ",
-    "contact.copy": "کپی یوزرنیم",
-    "contact.copied": "یوزرنیم کپی شد",
-    "contact.emailCopied": "کپی شد",
-    "contact.linkedin": "لینکدین",
-    "contact.github": "گیت‌هاب"
-  };
-
-  function t(key) { return lang() === "en" ? (en[key] || key) : (faExtra[key] || key); }
+  function t(key) { return (lang() === "fa" ? fa[key] : en[key]) || en[key] || key; }
 
   function applyLanguage(l) {
     root.lang = l;
-    root.dir = l === "en" ? "ltr" : "rtl";
-    faText.forEach(function (fa, n) {
+    root.dir = l === "fa" ? "rtl" : "ltr";
+    baseText.forEach(function (text, n) {
       var key = n.getAttribute("data-i18n");
-      if (l === "en" && en[key]) n.textContent = en[key]; else n.innerHTML = fa;
+      n.textContent = l === "fa" && fa[key] ? fa[key] : text;
     });
-    faAttr.forEach(function (rec) {
-      rec.node.setAttribute(rec.attr, l === "en" && en[rec.key] ? en[rec.key] : rec.value);
+    baseAttr.forEach(function (rec) {
+      rec.node.setAttribute(rec.attr, l === "fa" && fa[rec.key] ? fa[rec.key] : rec.value);
     });
-    document.getElementById("langToggle").setAttribute("lang", l === "en" ? "fa" : "en");
+    document.getElementById("langToggle").setAttribute("lang", l === "fa" ? "en" : "fa");
     var year = new Date().getFullYear();
     document.getElementById("year").textContent = num(year);
     document.getElementById("sideYear").textContent = num(year);

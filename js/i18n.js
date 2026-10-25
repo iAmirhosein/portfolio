@@ -1,7 +1,8 @@
 /*
- * متن‌های انگلیسی سایت. متن فارسی مستقیم داخل index.html است؛
- * هر عنصری که data-i18n="key" دارد، در حالت انگلیسی با متن همان کلید از این فایل عوض می‌شود.
- * English UI strings. The Persian text lives in index.html itself.
+ * متن‌های سایت. زبان پیش‌فرض انگلیسی است و متن انگلیسی داخل index.html هم هست؛
+ * هر عنصری که data-i18n="key" دارد، در حالت فارسی با متن همان کلید از I18N_FA عوض می‌شود.
+ * Site strings. English is the default and also lives in index.html;
+ * elements with data-i18n="key" switch to I18N_FA[key] in Persian mode.
  */
 window.I18N_EN = {
   "meta.title": "Amirhosein Kohansal (iAmirhosein) | iOS Developer",
@@ -67,4 +68,62 @@ window.I18N_EN = {
 
   "footer.rights": "Amirhosein Kohansal",
   "footer.top": "Back to top ↑"
+};
+
+window.I18N_FA = {
+  "meta.title": "امیرحسین کهنسال (iAmirhosein) | توسعه‌دهنده‌ی iOS",
+  "skip": "رفتن به محتوا",
+  "nav.about": "درباره",
+  "nav.work": "نمونه‌کارها",
+  "nav.expertise": "تخصص‌ها",
+  "nav.contact": "تماس",
+  "nav.lang": "EN",
+  "nav.cta": "در تماس باشیم",
+  "hero.side": "توسعه‌دهنده‌ی iOS",
+  "hero.stat1": "+۸",
+  "hero.stat1Label": "پروژه",
+  "hero.stat2": "۲۰۱۹",
+  "hero.stat2Label": "شروع با iOS",
+  "hero.hello": "امیرحسین کهنسال",
+  "hero.intro": "توسعه‌دهنده‌ی iOS",
+  "hero.lead": "اپ‌های بومی iOS، با دقت تا آخرین جزئیات.",
+  "hero.scroll": "ادامه",
+  "about.title": "درباره",
+  "about.body1": "از ۲۰۱۹ برای iOS می‌سازم، با یک قاعده:",
+  "about.body2": "بهترین اپ آن است که لازم نباشد به آن فکر کنید.",
+  "about.handle": "در اینترنت",
+  "about.latest": "تازه‌ترین کار",
+  "about.skills": "مهارت‌ها و ابزارها",
+  "work.label": "نمونه‌کارها",
+  "work.title": "کارهای منتخب",
+  "expertise.label": "تخصص‌ها",
+  "expertise.e1.title": "اپ‌های بومی iOS",
+  "expertise.e1.body": "Swift، UIKit و SwiftUI؛ از معماری تا جزئیات رابط کاربری.",
+  "expertise.e2.title": "دستگاه‌های متصل",
+  "expertise.e2.body": "ارتباط با سخت‌افزار از راه شبکه‌ی محلی، WebSocket و MQTT.",
+  "expertise.e3.title": "انتشار و نگهداری",
+  "expertise.e3.body": "از TestFlight تا App Store، و همراه ماندن با هر نسخه‌ی تازه‌ی iOS.",
+  "contact.label": "تماس",
+  "contact.title": "در تماس باشیم",
+  "contact.lead": "برای یک پروژه، همکاری یا فقط یک گفت‌وگو.",
+  "contact.copyEmail": "کپی",
+  "footer.rights": "امیرحسین کهنسال",
+  "footer.top": "بازگشت به بالا ↑",
+  "meta.description": "نمونه‌کارهای امیرحسین کهنسال (iAmirhosein)، توسعه‌دهنده‌ی iOS: اپ‌های آیفون و آیپد، از شبکه‌های اجتماعی تا خانه‌ی هوشمند.",
+  "nav.theme": "تغییر حالت روشن و تیره",
+  "nav.menu": "منو",
+  "work.placeholder": "نمونه",
+  "work.appStore": "App Store",
+  "work.sibapp": "سیب‌اپ",
+  "work.anardoni": "اناردونی",
+  "work.googlePlay": "Google Play",
+  "work.github": "GitHub",
+  "work.website": "وب‌سایت",
+  "contact.telegram": "تلگرام",
+  "contact.whatsapp": "واتس‌اپ",
+  "contact.copy": "کپی یوزرنیم",
+  "contact.copied": "یوزرنیم کپی شد",
+  "contact.emailCopied": "کپی شد",
+  "contact.linkedin": "لینکدین",
+  "contact.github": "گیت‌هاب"
 };
