@@ -10,13 +10,15 @@ window.SITE_CONFIG = {
   // پیشنهاد: عمودی، حدود ۸۰۰×۱۰۰۰ پیکسل. تا خالی است، «iA» جایش نمایش داده می‌شود.
   photo: "assets/me.jpg",
 
-  email: "amirhosein.kv7@gmail.com",
+  email: "iAmirhosein7@gmail.com",
 
   // فقط یوزرنیم، بدون @ — مثلاً "iAmirhosein"
-  telegram: "REPLACE_ME_telegram_username",
+  telegram: "iAmirhosein_dev",
 
-  // شماره با کد کشور و بدون + و صفر اول — مثلاً "989121234567"
-  whatsapp: "REPLACE_ME_989xxxxxxxxx",
+  // یوزرنیم واتس‌اپ، یا شماره با کد کشور و بدون + (مثلاً "989121234567")
+  // شماره → لینک مستقیم wa.me؛ یوزرنیم → دکمه‌ای که یوزرنیم را کپی می‌کند
+  // (واتس‌اپ هنوز لینک رسمی برای یوزرنیم منتشر نکرده است)
+  whatsapp: "iAmirhosein_dev",
 
   // لینک کامل پروفایل
   linkedin: "https://www.linkedin.com/in/amirhosein-kohansal/",

@@ -394,8 +394,13 @@ html { scroll-padding-top: 88px; }
 /* ---------- contact ---------- */
 .email { transition: letter-spacing .4s ease, color .2s ease; }
 .email:hover { letter-spacing: 0; }
+.email-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; margin-top: 40px; }
+.email-row .email { margin-top: 0; }
+.copy-email { font-size: .85rem; padding: 8px 16px; }
 .socials a { display: inline-flex; padding: 10px 18px; border-radius: 999px; border: 1px solid var(--line); text-decoration: none; transition: background .2s ease, color .2s ease; }
 .socials a:hover { background: var(--text); color: var(--bg); }
+.copy-chip { font: inherit; color: inherit; background: none; cursor: copy; display: inline-flex; padding: 10px 18px; border-radius: 999px; border: 1px solid var(--line); transition: background .2s ease, color .2s ease; }
+.copy-chip:hover { background: var(--text); color: var(--bg); }
 
 /* ---------- film grain ---------- */
 body::after {

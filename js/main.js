@@ -42,6 +42,9 @@
     "work.website": "وب‌سایت",
     "contact.telegram": "تلگرام",
     "contact.whatsapp": "واتس‌اپ",
+    "contact.copy": "کپی یوزرنیم",
+    "contact.copied": "یوزرنیم کپی شد",
+    "contact.emailCopied": "کپی شد",
     "contact.linkedin": "لینکدین",
     "contact.github": "گیت‌هاب"
   };
@@ -145,22 +148,44 @@
   function renderContacts() {
     var email = document.getElementById("emailLink");
     if (isSet(config.email)) { email.href = "mailto:" + config.email; email.textContent = config.email; }
-    else email.hidden = true;
+    else email.parentNode.hidden = true;
 
     var out = [];
+    if (isSet(config.telegram)) out.push(["telegram", "https://t.me/" + config.telegram]);
+    // a phone number gets a wa.me link; a username has no published link format, so it is copied instead
+    if (isSet(config.whatsapp)) out.push(["whatsapp", /^\d+$/.test(config.whatsapp) ? "https://wa.me/" + config.whatsapp : null]);
     if (isSet(config.linkedin)) out.push(["linkedin", config.linkedin]);
     if (isSet(config.github)) out.push(["github", config.github]);
-    if (isSet(config.telegram)) out.push(["telegram", "https://t.me/" + config.telegram]);
-    if (isSet(config.whatsapp)) out.push(["whatsapp", "https://wa.me/" + config.whatsapp]);
 
     var list = document.getElementById("contactLinks");
     list.textContent = "";
     out.forEach(function (c) {
       var li = el("li");
-      li.appendChild(el("a", { "class": "arrow-link", href: c[1], target: "_blank", rel: "noopener" }, t("contact." + c[0])));
+      if (c[1]) {
+        li.appendChild(el("a", { "class": "arrow-link", href: c[1], target: "_blank", rel: "noopener" }, t("contact." + c[0])));
+      } else {
+        var label = t("contact." + c[0]) + " · " + config.whatsapp;
+        var btn = el("button", { "class": "copy-chip", type: "button", title: t("contact.copy") }, label);
+        btn.addEventListener("click", function () {
+          var done = function () { btn.textContent = t("contact.copied"); setTimeout(function () { btn.textContent = label; }, 1600); };
+          if (navigator.clipboard) navigator.clipboard.writeText(config.whatsapp).then(done, done); else done();
+        });
+        li.appendChild(btn);
+      }
       list.appendChild(li);
     });
   }
+
+  // ---------- copy email (mailto does nothing on machines without a mail app) ----------
+  var copyEmail = document.getElementById("copyEmail");
+  copyEmail.addEventListener("click", function () {
+    var label = copyEmail.textContent;
+    var done = function () {
+      copyEmail.textContent = t("contact.emailCopied");
+      setTimeout(function () { copyEmail.textContent = label; }, 1600);
+    };
+    if (navigator.clipboard) navigator.clipboard.writeText(config.email).then(done, done); else done();
+  });
 
   // ---------- scroll reveal ----------
   var revealer = "IntersectionObserver" in window ? new IntersectionObserver(function (entries) {

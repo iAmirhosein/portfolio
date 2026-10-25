@@ -58,6 +58,10 @@ window.I18N_EN = {
   "contact.email": "Email",
   "contact.telegram": "Telegram",
   "contact.whatsapp": "WhatsApp",
+  "contact.copy": "Copy username",
+  "contact.copied": "Username copied",
+  "contact.copyEmail": "Copy",
+  "contact.emailCopied": "Copied",
   "contact.linkedin": "LinkedIn",
   "contact.github": "GitHub",
 
