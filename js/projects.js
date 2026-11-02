@@ -84,7 +84,7 @@ window.PROJECTS = [
       }
     ],
     status: { fa: "منتشر شده و در App Store در دسترس است.", en: "Released and available on the App Store." },
-    tech: ["Swift", "UIKit", "REST APIs", "MQTT", "WebSocket", "ESPTouch v2"],
+    tech: ["Swift", "UIKit", "REST APIs", "MQTT", "WebSocket", "ESPTouch v2", "Sign in with Apple"],
     image: "assets/projects/alpha-shome.jpg",
     screenshots: [
       "assets/projects/alpha-shome/01.jpg",
@@ -148,7 +148,7 @@ window.PROJECTS = [
       }
     ],
     status: { fa: "منتشر شده و در App Store در دسترس است.", en: "Released and available on the App Store." },
-    tech: ["Swift", "UIKit", "REST APIs", "Google Maps"],
+    tech: ["Swift", "UIKit", "REST APIs", "Google Maps", "Google Sign-In", "Sign in with Apple"],
     image: "assets/projects/amup.jpg",
     screenshots: [
       "assets/projects/am-up/01.jpg",

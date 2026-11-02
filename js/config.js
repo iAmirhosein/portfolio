@@ -52,7 +52,7 @@ window.SITE_CONFIG = {
     },
     {
       title: { fa: "سرویس‌ها و SDKها", en: "Services & SDKs" },
-      items: ["Firebase", "Firestore", "Realtime Database", "Cloud Messaging", "Google Maps", "Google Sign-In"]
+      items: ["Firebase", "Firestore", "Realtime Database", "Cloud Messaging", "Google Maps", "Google Sign-In", "Sign in with Apple"]
     },
     {
       title: { fa: "ابزار و انتشار", en: "Tooling & release" },
@@ -88,7 +88,7 @@ window.SITE_CONFIG = {
           "Developed device-specific interfaces and interaction flows for different smart home products."
         ]
       },
-      tech: ["Swift", "UIKit", "Figma", "MQTT", "REST APIs", "Alamofire", "WebSocket", "Socket.IO", "TCP", "Core Data", "User Notifications", "Firebase", "Google Sign-In"]
+      tech: ["Swift", "UIKit", "Figma", "MQTT", "REST APIs", "Alamofire", "WebSocket", "Socket.IO", "TCP", "Core Data", "User Notifications", "Firebase", "Google Sign-In", "Sign in with Apple"]
     },
     {
       from: 2021, to: 2021,
@@ -142,7 +142,7 @@ window.SITE_CONFIG = {
           "Focused on building a maintainable, scalable, and user-friendly application."
         ]
       },
-      tech: ["Swift", "UIKit", "Auto Layout", "Figma", "REST APIs", "Alamofire", "User Notifications", "Firebase", "Firestore", "Cloud Messaging", "Google Maps"]
+      tech: ["Swift", "UIKit", "Auto Layout", "Figma", "REST APIs", "Alamofire", "User Notifications", "Firebase", "Firestore", "Cloud Messaging", "Google Maps", "Google Sign-In", "Sign in with Apple"]
     },
     {
       from: 2019, to: 2019,
