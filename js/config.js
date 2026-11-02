@@ -36,7 +36,7 @@ window.SITE_CONFIG = {
   expertise: [
     {
       title: { fa: "زبان، رابط کاربری و معماری", en: "Language, UI & architecture" },
-      items: ["Swift", "Objective-C", "UIKit", "SwiftUI", "Auto Layout", "Storyboards", "Programmatic UI", "MVC"]
+      items: ["Swift", "Objective-C", "UIKit", "SwiftUI", "Auto Layout", "Storyboards", "Programmatic UI", "MVC", "MVVM"]
     },
     {
       title: { fa: "شبکه", en: "Networking" },
@@ -88,7 +88,7 @@ window.SITE_CONFIG = {
           "Developed device-specific interfaces and interaction flows for different smart home products."
         ]
       },
-      tech: ["Swift", "UIKit", "Figma", "MQTT", "REST APIs", "WebSocket"]
+      tech: ["Swift", "UIKit", "Figma", "MQTT", "REST APIs", "Alamofire", "WebSocket", "Socket.IO", "TCP", "Core Data", "User Notifications", "Firebase", "Google Sign-In"]
     },
     {
       from: 2021, to: 2021,
@@ -115,7 +115,7 @@ window.SITE_CONFIG = {
           "Focused on code quality, maintainability, and a smooth user experience."
         ]
       },
-      tech: ["Swift", "UIKit", "Figma", "WebRTC"]
+      tech: ["Swift", "UIKit", "Figma", "WebRTC", "REST APIs", "Alamofire", "WebSocket", "VoIP", "Agora", "Twilio", "Jitsi", "User Notifications", "Firebase", "Firestore"]
     },
     {
       from: 2021, to: 2021,
@@ -142,7 +142,7 @@ window.SITE_CONFIG = {
           "Focused on building a maintainable, scalable, and user-friendly application."
         ]
       },
-      tech: ["Swift", "UIKit", "Figma", "REST APIs"]
+      tech: ["Swift", "UIKit", "Auto Layout", "Figma", "REST APIs", "Alamofire", "User Notifications", "Firebase", "Firestore", "Cloud Messaging", "Google Maps"]
     },
     {
       from: 2019, to: 2019,
