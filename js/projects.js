@@ -11,6 +11,7 @@
  *   title        { fa, en } عنوان
  *   role         { fa, en } نقش شما یا نوع اپ
  *   description  { fa, en } توضیح کوتاه (یک جمله؛ زیر عنوان کارت و صفحه‌ی جزئیات)
+ *   summary      { fa, en } دو جمله توضیح بیشتر زیر description، فقط روی کارت صفحه‌ی اصلی
  *
  *   فیلدهای صفحه‌ی جزئیات (فقط برای پروژه‌های selected؛ صفحه در project.html?p=<id>):
  *   overview     { fa: [...], en: [...] } پاراگراف‌های معرفی
@@ -37,6 +38,10 @@ window.PROJECTS = [
     description: {
       fa: "پلتفرمی یکپارچه در iOS برای کنترل و مدیریت دستگاه‌های خانه‌ی هوشمند.",
       en: "A unified iOS platform for controlling and managing smart home devices."
+    },
+    summary: {
+      fa: "اپ خانه‌ی هوشمندی که کلیدها، پرده‌ها، ترموستات‌ها، روشنایی و دستگاه‌های متصل را در یک تجربه‌ی کنترل یکپارچه کنار هم می‌آورد. از صفر تا انتها ساخته شده، با ارتباط محلی و از راه دور با دستگاه‌ها.",
+      en: "A smart home app that brings switches, curtains, thermostats, lighting and connected devices into one seamless control experience. Built end to end, with local and remote device communication."
     },
     overview: {
       fa: [
@@ -112,6 +117,10 @@ window.PROJECTS = [
       fa: "پلتفرمی اجتماعی برای دور هم جمع کردن آدم‌ها با فعالیت‌های مشترک.",
       en: "A social platform designed to bring people together through shared activities."
     },
+    summary: {
+      fa: "اپ اجتماعی مبتنی بر موقعیت مکانی برای پیدا کردن فعالیت‌های اطراف، ساختن رویداد و آشنایی با آدم‌ها. از طراحی UI/UX تا پیاده‌سازی ساخته شده، با کشف رویدادها روی نقشه و اتصال به سرویس‌های اجتماعی.",
+      en: "A location-based social app for discovering nearby activities, creating events and meeting people. Built from UI/UX design to implementation, with map-based discovery and social integrations."
+    },
     overview: {
       fa: [
         "AmUp یک اپ شبکه‌ی اجتماعی است که به کاربران کمک می‌کند فعالیت‌ها را پیدا کنند، رویداد بسازند و با آدم‌های اطرافشان در ارتباط باشند.",
@@ -169,6 +178,10 @@ window.PROJECTS = [
       fa: "تعامل‌های دیجیتال شخصی‌تر، با ارتباط بلادرنگ.",
       en: "Making digital interactions more personal through real-time communication."
     },
+    summary: {
+      fa: "اپ اجتماعی با تمرکز بر ارتباط تصویری بلادرنگ و تجربه‌های تعاملی. طراحی و توسعه از ابتدا تا انتها، با تماس تصویری مبتنی بر WebRTC.",
+      en: "A social app focused on real-time video connections and interactive experiences. Designed and developed end to end, with WebRTC-powered video communication."
+    },
     overview: {
       fa: [
         "Hang یک اپ اجتماعی است که با تجربه‌های تعاملی و تماس تصویری بلادرنگ، آدم‌ها را به هم نزدیک می‌کند.",
@@ -219,6 +232,10 @@ window.PROJECTS = [
     description: {
       fa: "تجربه‌ای دیجیتال برای پیدا کردن و لذت بردن از محتوای صوتی و تصویری.",
       en: "A digital media experience for discovering and enjoying audio and video content."
+    },
+    summary: {
+      fa: "اپ نیتیو رسانه‌ای برای پیدا کردن و پخش محتوای صوتی و تصویری. طراحی و توسعه از پایه، شامل مرور محتوا و پخش رسانه داخل اپ.",
+      en: "A native media app for discovering and playing audio and video content. Designed and developed from the ground up, including content browsing and in-app media playback."
     },
     overview: {
       fa: [

@@ -131,6 +131,7 @@
       if (p.role) meta.appendChild(document.createTextNode(text(p.role, l)));
       body.appendChild(meta);
       if (p.description) body.appendChild(el("p", { "class": "work-desc" }, text(p.description, l)));
+      if (p.summary) body.appendChild(el("p", { "class": "work-summary" }, text(p.summary, l)));
 
       if (p.tech && p.tech.length) body.appendChild(el("p", { "class": "work-tech", dir: "ltr" }, p.tech.join(" · ")));
       var links = projectLinks(p);
